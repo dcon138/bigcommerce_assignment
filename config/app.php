@@ -159,6 +159,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\ComposerServiceProvider::class,
+        App\Providers\CustomerRepositoryServiceProvider::class,
+        App\Providers\CustomerServiceProvider::class,
+        App\Providers\OrderRepositoryServiceProvider::class,
+        App\Providers\OrderServiceProvider::class,
 
     ],
 
@@ -208,6 +213,10 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        /* App Facades */
+        'Customer' => App\Facades\Customer::class,
+        'Order' => App\Facades\Order::class,
 
     ],
 
